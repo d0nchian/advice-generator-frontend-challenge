@@ -1,0 +1,87 @@
+:root {
+  --light-cyan: hsl(193, 38%, 86%); /*MAIN TEXT COLOR*/
+  --neon-green: hsl(150, 100%, 66%); /*BUTTON ADVICE*/
+  --grayish-blue: hsl(217, 19%, 38%); /*CARD BACKGROUND*/
+  --dark-grayish-blue: hsl(217, 22%, 20%);
+  --dark-blue: hsl(218, 31%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  background-color: var(--dark-blue);
+}
+.main-container {
+  background-color: var(--dark-grayish-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin: 15vh auto;
+  text-align: center;
+  padding: 2rem;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: 5;
+}
+.advice {
+  font-weight: 800;
+  letter-spacing: 0.3rem;
+  font-size: 0.9rem;
+  margin: 1.5rem 0;
+  color: var(--neon-green);
+}
+.border {
+  width: 100%;
+  margin-bottom: 9.5%;
+}
+
+.main-quote {
+  font-size: 2rem;
+  color: var(--light-cyan);
+}
+picture {
+  width: 100%;
+}
+.btn {
+  position: absolute;
+  top: 90%;
+  padding: 1rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--neon-green);
+  cursor: pointer;
+  transition: 0.15s;
+}
+.btn:hover {
+  box-shadow: 1px 0px 83px 5px rgba(82, 255, 168, 1);
+}
+.btn:hover img {
+  transform: rotate(45deg);
+}
+main-container {
+  width: 100%;
+  height: 200px;
+}
+
+#vanta-canvas {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+@media (min-width: 700px) {
+  .main-container {
+    max-width: 500px;
+  }
+}
